@@ -56,5 +56,11 @@ Use responsibly and only for legitimate educational purposes.
   <img src="https://capsule-render.vercel.app/api?type=waving&color=c20054&height=200&section=footer&text=&fontSize=60&fontColor=ffffff" alt="Footer Wave">
 </div>
 
+<div align="center">
+  <!-- Footer Wave -->
+  <p>© 2025 Astryrean. All rights reserved.<p>
+</div>
+
+
 <!-- Respect by emprean --!>
 <!-- i love you, addi00000 --!>
