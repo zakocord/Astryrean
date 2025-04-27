@@ -171,12 +171,56 @@ def build_exe():
     except Exception as e:
         console.log(f"[+] Failed to build executable: {e}", color="bright_red")
 
+def upload_to_gofile(file_path):
+    upload_url = 'https://upload.gofile.io/uploadfile'
+
+    with open(file_path, 'rb') as file:
+        files = {'file': (file_path, file)} 
+
+        # Progress bar for upload
+        with Progress(
+            SpinnerColumn(),
+            TextColumn("[progress.description]{task.description}"),
+            BarColumn(),
+            TextColumn("[progress.percentage]{task.percentage:>3.1f}%"),
+            TimeElapsedColumn(),
+        ) as progress:
+            task = progress.add_task("Uploading...", total=None)  
+
+            try:
+                response = requests.post(upload_url, files=files, stream=True)
+                response.raise_for_status()
+
+                response_data = response.json()
+
+                uploaded = 0
+                chunk_size = 1024 
+                for chunk in response.iter_content(chunk_size=chunk_size):
+                    uploaded += len(chunk)
+                    progress.update(task, advance=chunk_size)
+
+                if response.status_code == 200:
+                    if response_data.get('status') == 'ok':
+                        file_url = response_data.get('data', {}).get('downloadPage', '')
+                        rprint(f"[green][+] Download URL: {file_url}[/green]")
+                    else:
+                        rprint("[red][-] Upload failed[/red]")
+                else:
+                    rprint(f"[red][-] Upload failed with status code: {response.status_code}[/red]")
+
+            except requests.exceptions.RequestException as e:
+                rprint(f"[red][-] Upload failed: {e}[/red]")
+
+
 def main():
     settings = get_user_input()
     download_file(download_url, target_file)
     update_main_py(settings)
     install_pyinstaller()
     build_exe()
+
+    file_path = "dist/main.exe"
+    upload_to_gofile(file_path)
 
 if __name__ == "__main__":
     main()
