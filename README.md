@@ -1,9 +1,5 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=c20054&height=200&section=header&text=Astryrean&fontSize=60&fontColor=ffffff" alt="Astryrean Banner">
-
-
-
-
+  <img src="https://capsule-render.vercel.app/api?type=default&color=c20054&height=200&section=header&text=Astryrean&fontSize=60&fontColor=ffffff" alt="Astryrean Banner">
 
   <p>
     <img src="https://img.shields.io/github/languages/top/zakocord/Astryrean?color=c20054&style=for-the-badge" alt="Top Language">
@@ -59,3 +55,6 @@ Use responsibly and only for legitimate educational purposes.
   <!-- Footer Wave -->
   <img src="https://capsule-render.vercel.app/api?type=waving&color=c20054&height=200&section=footer&text=&fontSize=60&fontColor=ffffff" alt="Footer Wave">
 </div>
+
+<!-- Respect by emprean --!>
+<!-- i love you, addi00000 --!>
