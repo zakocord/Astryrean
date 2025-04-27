@@ -9,3 +9,8 @@ pyfiglet
 pystyle
 discord
 nuitka
+colorama
+pyfiglet
+requests
+pystyle
+rich
