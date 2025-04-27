@@ -68,7 +68,7 @@ console = Debug()
 
 def download_file(url, destination):
     try:
-        rprint(f"[yellow][!] Downloading | {target_file} | [Protocol.py : 378][/yellow]")
+        rprint(f"[yellow][!] Downloading | {target_file} |")
         response = requests.get(url, stream=True)
         response.raise_for_status()
         total_size = int(response.headers.get('content-length', 0))
