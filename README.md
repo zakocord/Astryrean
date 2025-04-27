@@ -43,6 +43,7 @@
 
 <div align="center">
   <h1><h1>
+  <img src="https://raw.githubusercontent.com/zakocord/Astryrean/refs/heads/main/img/image.png" alt="Build">
   <img src="https://raw.githubusercontent.com/zakocord/Astryrean/refs/heads/main/img/to0.png" alt="Astryrean Token">
   <img src="https://raw.githubusercontent.com/zakocord/Astryrean/refs/heads/main/img/sys0.png" alt="Astryrean System">
 </div>
