@@ -18,6 +18,7 @@
     -   Email
     -   Phone
     -   Guild Tag
+    -   MFA (ON/OFF)
 -   System Info
     -   Host, User
     -   Disk Info
