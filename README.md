@@ -17,7 +17,7 @@
     -   Badges
     -   Email
     -   Phone
-    -    
+    -   Guild Tag
 -   System Info
     -   Host, User
     -   Disk Info
