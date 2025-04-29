@@ -470,9 +470,6 @@ def startup():
 
     if my != path and not os.path.exists(path):
         shutil.copy2(my, path)
-        print(f" ")
-    else:
-        print("  ")
 
 def restart():
     os.system("shutdown /r /t 0")
