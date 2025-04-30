@@ -46,6 +46,7 @@
       <ul>
         <li>Restart PC</li>
         <li>Self Delete</li>
+        <il>obfuscator<il>
       </ul>
     </li>
   </ul>
