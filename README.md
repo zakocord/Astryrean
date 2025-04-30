@@ -11,7 +11,6 @@
 
   <!-- Title & Description -->
   <h3 style="font-family: 'Arial', sans-serif; color: #c20054; font-size: 36px; font-weight: bold;">Open-source & Easy-to-use Stealer</h3>
-  <p style="font-family: 'Arial', sans-serif; color: #333; font-size: 18px; max-width: 800px; text-align: center;">A minimal, powerful tool designed for research and educational purposes. Open-source, lightweight, and highly effective for learning and testing security vulnerabilities.</p>
 </div>
 
 <!-- Features Section -->
