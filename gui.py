@@ -16,6 +16,9 @@ from rich import print as rprint
 
 # Obfuscator
 class Obfuscators:
+    """
+    Obfuscate code using github.com/Lawxsz/Py-obfuscator | ❤ Make With Lawxsz THanks You.
+    """
     def __init__(self, include_imports: bool = False, recursion: int = 1):
         self.include_imports = include_imports
         self.recursion = max(1, recursion)
