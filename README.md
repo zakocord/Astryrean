@@ -68,6 +68,7 @@
 
 <!-- Images Section -->
 <div align="center">
+  <h3>Screenshots<h3>
   <img src="https://raw.githubusercontent.com/zakocord/Astryrean/refs/heads/main/img/image.png" alt="Build" style="width: 30%; padding: 10px;">
   <img src="https://raw.githubusercontent.com/zakocord/Astryrean/refs/heads/main/img/to0.png" alt="Astryrean Token" style="width: 30%; padding: 10px;">
   <img src="https://raw.githubusercontent.com/zakocord/Astryrean/refs/heads/main/img/sys0.png" alt="Astryrean System" style="width: 30%; padding: 10px;">
