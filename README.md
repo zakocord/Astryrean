@@ -1,68 +1,100 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=c20054&height=200&section=header&text=Astryrean&fontSize=60&fontColor=ffffff" alt="Astryrean Banner">
+  <!-- Banner -->
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=c20054&height=200&section=header&text=Astryrean&fontSize=60&fontColor=ffffff&fontFamily=Arial" alt="Astryrean Banner">
 
+  <!-- Badges Section -->
   <p>
-    <img src="https://img.shields.io/github/languages/top/zakocord/Astryrean?color=c20054&style=for-the-badge" alt="Top Language">
-    <img src="https://img.shields.io/github/last-commit/zakocord/Astryrean?color=c20054&style=for-the-badge" alt="Last Commit">
-    <img src="https://img.shields.io/github/stars/zakocord/Astryrean?color=c20054&style=for-the-badge" alt="Stars">
+    <img src="https://img.shields.io/github/languages/top/zakocord/Astryrean?color=c20054&style=for-the-badge&label=Top+Language" alt="Top Language">
+    <img src="https://img.shields.io/github/last-commit/zakocord/Astryrean?color=c20054&style=for-the-badge&label=Last+Commit" alt="Last Commit">
+    <img src="https://img.shields.io/github/stars/zakocord/Astryrean?color=c20054&style=for-the-badge&label=Stars" alt="Stars">
   </p>
 
-  <h3 style="font-family: 'Arial', sans-serif; color: #c20054;">Open-source & Easy-to-use Stealer</h3>
-  <p style="font-family: 'Arial', sans-serif; color: #333; font-size: 18px;">A minimal, powerful tool designed for research and educational purposes.</p>
+  <!-- Title & Description -->
+  <h3 style="font-family: 'Arial', sans-serif; color: #c20054; font-size: 36px; font-weight: bold;">Open-source & Easy-to-use Stealer</h3>
+  <p style="font-family: 'Arial', sans-serif; color: #333; font-size: 18px; max-width: 800px; text-align: center;">A minimal, powerful tool designed for research and educational purposes. Open-source, lightweight, and highly effective for learning and testing security vulnerabilities.</p>
 </div>
 
-## Features
--   Discord Token Info
-    -   Nitro
-    -   Badges
-    -   Email
-    -   Phone
-    -   Guild Tag
-    -   MFA (ON/OFF)
--   System Info
-    -   Host, User
-    -   Disk Info
-    -   CPU, GPU, RAM, Hwid
-    -   Screenshot
-    -   
--   Anti Debug & Anti VM
-    -   Find out if it's running on a VM or something else
-    -   Check if Debbuger (x64dbg) or other software is running
--   Startup
-    -   Add to Powershell:startup
--   Other
-    -   Restart PC
-    -   Self Delete
----
-## TODO
--   Anti Virus
-    -   Disable a anti virus
-    -   break the windows defender
-
-
----
-
-<div align="center">
-  <h1><h1>
-  <img src="https://raw.githubusercontent.com/zakocord/Astryrean/refs/heads/main/img/image.png" alt="Build">
-  <img src="https://raw.githubusercontent.com/zakocord/Astryrean/refs/heads/main/img/to0.png" alt="Astryrean Token">
-  <img src="https://raw.githubusercontent.com/zakocord/Astryrean/refs/heads/main/img/sys0.png" alt="Astryrean System">
+<!-- Features Section -->
+<h2 style="text-align: center; color: #c20054; font-family: 'Arial', sans-serif;">Features</h2>
+<div style="max-width: 800px; margin: 0 auto;">
+  <ul style="font-family: 'Arial', sans-serif; color: #333; font-size: 18px; line-height: 1.6;">
+    <li><strong>Discord Token Info:</strong>
+      <ul>
+        <li>Nitro</li>
+        <li>Badges</li>
+        <li>Email</li>
+        <li>Phone</li>
+        <li>Guild Tag</li>
+        <li>MFA (ON/OFF)</li>
+      </ul>
+    </li>
+    <li><strong>System Info:</strong>
+      <ul>
+        <li>Host, User</li>
+        <li>Disk Info</li>
+        <li>CPU, GPU, RAM, Hwid</li>
+        <li>Screenshot</li>
+      </ul>
+    </li>
+    <li><strong>Anti Debug & Anti VM:</strong>
+      <ul>
+        <li>Detect if running on a VM</li>
+        <li>Check for Debuggers (x64dbg or others)</li>
+      </ul>
+    </li>
+    <li><strong>Startup:</strong> Add to PowerShell:startup</li>
+    <li><strong>Other:</strong>
+      <ul>
+        <li>Restart PC</li>
+        <li>Self Delete</li>
+      </ul>
+    </li>
+  </ul>
 </div>
 
-## License
-Astryrean is licensed under the [MIT License](https://mit-license.org/).  
-Use responsibly and only for legitimate educational purposes.
+<hr style="border: 1px solid #c20054; max-width: 100px; margin: 20px auto;">
 
+<!-- TODO Section -->
+<h2 style="text-align: center; color: #c20054; font-family: 'Arial', sans-serif;">TODO</h2>
+<ul style="font-family: 'Arial', sans-serif; color: #333; font-size: 18px; line-height: 1.6; max-width: 800px; margin: 0 auto;">
+  <li><strong>Anti Virus:</strong>
+    <ul>
+      <li>Disable Anti-Virus</li>
+      <li>Break Windows Defender</li>
+    </ul>
+  </li>
+</ul>
+
+<hr style="border: 1px solid #c20054; max-width: 100px; margin: 20px auto;">
+
+<!-- Images Section -->
 <div align="center">
-  <!-- Footer Wave -->
+  <img src="https://raw.githubusercontent.com/zakocord/Astryrean/refs/heads/main/img/image.png" alt="Build" style="width: 30%; padding: 10px;">
+  <img src="https://raw.githubusercontent.com/zakocord/Astryrean/refs/heads/main/img/to0.png" alt="Astryrean Token" style="width: 30%; padding: 10px;">
+  <img src="https://raw.githubusercontent.com/zakocord/Astryrean/refs/heads/main/img/sys0.png" alt="Astryrean System" style="width: 30%; padding: 10px;">
+</div>
+
+<!-- Installation Section -->
+<h2 style="text-align: center; color: #c20054; font-family: 'Arial', sans-serif;">Install</h2>
+<p style="font-family: 'Arial', sans-serif; color: #333; font-size: 18px; max-width: 800px; margin: 0 auto; text-align: center;">Follow these steps to install and run *Astryrean* on your machine.</p>
+<ul style="font-family: 'Arial', sans-serif; color: #333; font-size: 18px; line-height: 1.6; max-width: 800px; margin: 0 auto;">
+  <li><strong>1:</strong> Copy your Discord webhook URL to the "Enter Your Webhook" section.</li>
+  <li><strong>2:</strong> Choose which features to enable (Y/N) based on your needs.</li>
+  <li><strong>3:</strong> Send the built `.exe` file or URL to the target victim. Enjoy >3</li>
+</ul>
+
+<hr style="border: 1px solid #c20054; max-width: 100px; margin: 20px auto;">
+
+<!-- License Section -->
+<h2 style="text-align: center; color: #c20054; font-family: 'Arial', sans-serif;">License</h2>
+<p style="font-family: 'Arial', sans-serif; color: #333; font-size: 18px; text-align: center;">Astryrean is licensed under the <a href="https://mit-license.org/" style="color: #c20054;">MIT License</a>.  
+Use responsibly and only for legitimate educational purposes.</p>
+
+<!-- Footer -->
+<div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=c20054&height=200&section=footer&text=&fontSize=60&fontColor=ffffff" alt="Footer Wave">
-</div>
-
-<div align="center">
-  <!-- Footer Wave -->
   <p>© 2025 Astryrean. All rights reserved.<p>
 </div>
 
-
-<!-- Respect by emprean --!>
-<!-- i love you, addi00000 --!>
+<!-- Footer Respect -->
+<p style="text-align: center; font-family: 'Arial', sans-serif; color: #333; font-size: 14px;"><!-- Respect by emprean --> <!-- i love you, addi00000 --></p>
