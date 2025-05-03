@@ -122,18 +122,15 @@ def get_github_stats():
         stars = data.get("stargazers_count", 0)
         forks = data.get("forks_count", 0)
         watch = data.get("watchers", 0)
-        description = data.get("description")
         return stars, forks, watch, description
     except requests.RequestException as e:
         rprint(f"[red][-] GitHub stats fetch failed: {e}[/red]")
         return None, None, None, None
 
 stars, forks, watch, description = get_github_stats()
-descriptions = f"{description}" if description else "No description available."
 stats_text = f"Star: {stars} | Fork: {forks} | Watchers: {watch}"
 
 print(Center.XCenter(colored_art))
-print(Center.XCenter(Fore.MAGENTA + descriptions))
 print(Center.XCenter(Fore.MAGENTA + stats_text))
 
 class Debug:
