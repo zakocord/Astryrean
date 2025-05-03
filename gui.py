@@ -8,7 +8,9 @@ import colorama
 from colorama import Fore
 import pyfiglet
 import requests
+
 # ============================================================================ #
+
 from pystyle import Center
 from rich.console import Console
 from rich.progress import Progress, BarColumn, TextColumn, TimeElapsedColumn, SpinnerColumn
@@ -122,15 +124,17 @@ def get_github_stats():
         stars = data.get("stargazers_count", 0)
         forks = data.get("forks_count", 0)
         watch = data.get("watchers", 0)
-        return stars, forks, watch, description
+        return stars, forks, watch
     except requests.RequestException as e:
         rprint(f"[red][-] GitHub stats fetch failed: {e}[/red]")
         return None, None, None, None
 
-stars, forks, watch, description = get_github_stats()
+stars, forks, watch= get_github_stats()
 stats_text = f"Star: {stars} | Fork: {forks} | Watchers: {watch}"
+old_Text = "Open-Source and Easy Use Stealer"
 
 print(Center.XCenter(colored_art))
+print(Center.XCenter(Fore.MAGENTA + old_Text))
 print(Center.XCenter(Fore.MAGENTA + stats_text))
 
 class Debug:
