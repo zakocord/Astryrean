@@ -203,7 +203,7 @@ def tokens(token: str):
     headers = {
         "Authorization": token,
         "Content-Type": "application/json",
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100'
+        'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.85 Safari/537.36'
     }
     
     try:
@@ -240,7 +240,7 @@ def tokens(token: str):
             if premium_type == 1:
                  nitro_type = "<:emo:1363064691282149418> Nitro Classic"
             elif premium_type == 2:
-                nitro_type = "<:nitro_booster:1363009541515513986> Boost Nitro"
+                nitro_type = "<:nitro_booster:1363009541515513986> Nitro Boost"
             elif premium_type == 3:
                 nitro_type = "<:emo:1363064691282149418> Basic Nitro"
             
