@@ -12,12 +12,12 @@
 </div>
 
 ## 📚 Table of Contents
-- 1.[📖 Overview](https://github.com/zakocord/Astryrean-Stealer#overview)
-- 2.[✨ Feature](https://github.com/zakocord/Astryrean-Stealer#Feature)
-- 3.[⏩ Changelog](https://github.com/zakocord/Astryrean-Stealer#Changelog)
-- 4.[📁 Getting Started](https://github.com/zakocord/Astryrean-Stealer#-getting-started)
-- 5.[🗑️ Uninstall](https://github.com/zakocord/Astryrean-Stealer#Uninstall)
-- 6.[📕 Disclaimer](https://github.com/zakocord/Astryrean-Stealer#Disclaimer)
+- 1.[📖 Overview](#overview)
+- 2.[✨ Feature](#Feature)
+- 3.[⏩ Changelog](#Changelog)
+- 4.[📁 Getting Started](#-getting-started)
+- 5.[🗑️ Uninstall](#Uninstall)
+- 6.[📕 Disclaimer](#Disclaimer)
 
 ## 📖 Overview
 <p>🕵️ Stealer, 100% open source and easy to create, downloadable on Github<p>
