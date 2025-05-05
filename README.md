@@ -11,7 +11,7 @@
   [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=B699FF&width=435&lines=Malware+that+collects+Discord+Token+and+other+information+made+in+Python)](https://git.io/typing-svg)
 </div>
 
-## 📚 Table of Contents
+## Table of Contents
 - 1.[📖 Overview](#overview)
 - 2.[✨ Feature](#Feature)
 - 3.[⏩ Changelog](#Changelog)
@@ -19,11 +19,11 @@
 - 5.[🗑️ Uninstall](#Uninstall)
 - 6.[📕 Disclaimer](#Disclaimer)
 
-## 📖 Overview
+## Overview
 <p>🕵️ Stealer, 100% open source and easy to create, downloadable on Github<p>
 <p>🛡️ Regularly updated and secure!<p>
 
-## ✨ Feature
+## Feature
 
 - 💎 **Steal Feature**
   - 💬 **Discord**
@@ -59,7 +59,7 @@
     - 🧨 Self Delete
     - 🔁 Restart
 
-## 🚀 Getting Started
+## Getting Started
 ### 🧰 Requirements
 
 #### [🐍 Python 3.10](https://www.python.org/downloads/release/python-3100/)
@@ -74,12 +74,12 @@ First, run ``Build.bat``. (If you do not have Python installed, please install i
 
 
 
-## ⏩ Changelog
+## Changelog
 - 📅 2025/5/5
   - 📝 Update Readme
   - 🔁 Transition from custom pictograms to default emoji
 
-## 🗑️ Uninstall
+## Uninstall
 
 <div style="background-color: #2c2c2c; padding: 20px; border-radius: 8px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); margin-top: 30px;">
   
@@ -91,14 +91,14 @@ First, run ``Build.bat``. (If you do not have Python installed, please install i
   </div>
 </div>
 
-## 📕 Disclaimer
+## Disclaimer
 ### ⚠️ Educational Use Only
 <p>The developer created this tool for educational purposes only. Do not abuse it.<p>
 
-## 🛑 No Assistance
+## No Assistance
 <p>We accept bug reports but do not support any abuse methods.<p>
 
-## 📜 TOS (Terms of Service)
+## TOS (Terms of Service)
 <p>⚠️ Use at your own risk. The developer takes no responsibility.<p>
 
 <div align="center" href="https://star-history.com/#zakocord/Astryrean-Stealer&Timeline">
