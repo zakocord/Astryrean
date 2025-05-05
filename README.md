@@ -55,7 +55,7 @@
     - 🐞 Check for Debuggers (x64dbg or others)
 
   - 🚀 Launcher
-    - Steam
+    - 🎮️ Steam
      
   - 🧩 **Other**
     - 🎭 Obfuscator
