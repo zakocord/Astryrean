@@ -75,6 +75,8 @@ First, run ``Build.bat``. (If you do not have Python installed, please install i
 
 
 ## Changelog
+- 📅 2025/5/6
+  - 🚀 Support Laucher Stealer (Steam)
 - 📅 2025/5/5
   - 📝 Update Readme
   - 🔁 Transition from custom pictograms to default emoji
