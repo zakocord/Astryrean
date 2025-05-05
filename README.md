@@ -81,17 +81,41 @@
 <ul style="font-family: 'Arial', sans-serif; color: #333; font-size: 18px; line-height: 1.6; max-width: 800px; margin: 0 auto;">
   <li><strong>1:</strong> Copy your Discord webhook URL to the "Enter Your Webhook" section.</li>
   <li><strong>2:</strong> Choose which features to enable (Y/N) based on your needs.</li>
-  <li><strong>3:</strong> Send the built `.exe` file or URL to the target victim. Enjoy >3</li>
+  <li><strong>3:</strong> Send the built main.exe file or URL to the target victim. Enjoy >3</li>
 </ul>
 
 <hr style="border: 1px solid #c20054; max-width: 100px; margin: 20px auto;">
 
+<div align="center">
+  <h2 style="color: #c20054; font-family: 'Arial', sans-serif;">Respect</h2>
+  <p style="font-family: 'Arial', sans-serif; font-size: 16px; color: #333; max-width: 600px;">
+    This project draws inspiration from the following repositories and creators.<br>
+    Huge respect to their work:
+  </p>
+  <ul style="list-style: none; padding: 0; font-family: 'Arial', sans-serif; color: #333; font-size: 16px;">
+    <li><a href="https://github.com/addi00000/Empyrean" style="color: #c20054;">Empyrean</a> – You are the reason this project came into being. Thank you.</li>
+    <li><a href="https://github.com/k4itrun/wish" style="color: #c20054;">Wish</a> – README.MD</li>
+  </ul>
+  <p style="font-family: 'Arial', sans-serif; font-size: 14px; color: #666; max-width: 600px;">
+    We do not claim originality for all components. This project exists thanks to the collective contributions of the open-source community.
+  </p>
+</div>
+
+
+<!-- Star History -->
+<div align="center" href="https://star-history.com/#zakocord/Astryrean-Stealer&Timeline">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=zakocord/Astryrean-Stealer&type=Timeline&theme=dark" />
+    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=zakocord/Astryrean-Stealer&type=Timeline" />
+    <img alt="Star History Wish St34l3r" src="https://api.star-history.com/svg?repos=zakocord/Astryrean-Stealer&type=Timeline" />
+  </picture>
+</a>
+---
 <!-- License Section -->
 <h2 style="text-align: center; color: #c20054; font-family: 'Arial', sans-serif;">License</h2>
 <p style="font-family: 'Arial', sans-serif; color: #333; font-size: 18px; text-align: center;">Astryrean is licensed under the <a href="https://mit-license.org/" style="color: #c20054;">MIT License</a>.  
 Use responsibly and only for legitimate educational purposes.</p>
 
-<!-- Footer -->
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=c20054&height=200&section=footer&text=&fontSize=60&fontColor=ffffff" alt="Footer Wave">
   <p>© 2025 Astryrean. All rights reserved.<p>
