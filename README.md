@@ -49,7 +49,6 @@
     - 📸 Screenshot
     - 🚀 StartUp
     - 🌐 IP
-    - 📁 Download Folder
   
   - 🛡️ **Anti**
     - 🧪 Detect if running on a VM
