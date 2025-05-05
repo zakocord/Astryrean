@@ -225,7 +225,6 @@ def tokens(token: str):
     131072: "<:1207iconearlybotdeveloper:1163172236807639143>",  # Early Verified Bot Developer
     262144: "<:4149blurplecertifiedmoderator:1163172255489085481>",  # Certified Moderator
     4194304: "<:1207iconactivedeveloper:1163172534443851868>",  # Active Developer
-    1048704: "⌨️"
 }
 
             user = user_get.json()
