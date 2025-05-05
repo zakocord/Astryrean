@@ -53,7 +53,10 @@
   - 🛡️ **Anti**
     - 🧪 Detect if running on a VM
     - 🐞 Check for Debuggers (x64dbg or others)
-  
+
+  - 🚀 Launcher
+    - Steam
+     
   - 🧩 **Other**
     - 🎭 Obfuscator
     - 🧨 Self Delete
