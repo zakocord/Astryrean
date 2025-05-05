@@ -25,9 +25,6 @@
 
 ## ✨ Feature
 
-- 🧠 **Code**
-  - 🔹 Very simple code
-
 - 💎 **Steal Feature**
   - 💬 **Discord**
     - 🔑 Token
