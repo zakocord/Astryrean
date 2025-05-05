@@ -96,9 +96,11 @@
     <li><a href="https://github.com/addi00000/Empyrean" style="color: #c20054;">Empyrean</a> – You are the reason this project came into being. Thank you.</li>
     <li><a href="https://github.com/k4itrun/wish" style="color: #c20054;">Wish</a> – README.MD</li>
   </ul>
+  <p>᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼<p>
   <p style="font-family: 'Arial', sans-serif; font-size: 14px; color: #666; max-width: 600px;">
     We do not claim originality for all components. This project exists thanks to the collective contributions of the open-source community.
   </p>
+  <p>᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼<p>
 </div>
 
 
