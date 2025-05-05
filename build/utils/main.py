@@ -211,16 +211,23 @@ def tokens(token: str):
         
         if user_get.status_code == 200:
             print(".")
-        
+
             BADGES = {
-                4: "<:Hypesquad:1363064409424920616>",
-                8: "<:badge_1:1363064112975712276>",
-                64: "<:hypesquad_2:1363009297885302876>",
-                128: "<:hypesquad_3:1363009295523909794>",
-                256: "<:hypesquad_1:1363009300297027624>",
-                512: "<:emo:1363064691282149418>"
-            }
-            
+    1: "<:8485discordemployee:1163172252989259898>",  # Discord Employee
+    2: "<:9928discordpartnerbadge:1163172304155586570>",  # Partnered Server Owner
+    4: "<:9171hypesquadevents:1163172248140660839>",  # HypeSquad Events
+    8: "<:4744bughunterbadgediscord:1163172239970140383>",  # Bug Hunter Level 1
+    64: "<:6601hypesquadbravery:1163172246492287017>",  # House Bravery
+    128: "<:6936hypesquadbrilliance:1163172244474822746>",  # House Brilliance
+    256: "<:5242hypesquadbalance:1163172243417858128>",  # House Balance
+    512: "<:5053earlysupporter:1163172241996005416>",  # Early Supporter
+    16384: "<:1757bugbusterbadgediscord:1163172238942543892>",  # Bug Hunter Level 2
+    131072: "<:1207iconearlybotdeveloper:1163172236807639143>",  # Early Verified Bot Developer
+    262144: "<:4149blurplecertifiedmoderator:1163172255489085481>",  # Certified Moderator
+    4194304: "<:1207iconactivedeveloper:1163172534443851868>",  # Active Developer
+    1048704: "⌨️"
+}
+
             user = user_get.json()
 
             user_id = user.get("id")
