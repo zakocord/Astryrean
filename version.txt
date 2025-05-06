@@ -15,12 +15,12 @@ VSVersionInfo(
       [
       StringTable(
         '040904B0',
-        [StringStruct('CompanyName', '0'),
-        StringStruct('FileDescription', 'Installer'),
+        [StringStruct('CompanyName', 'CompanyName'),
+        StringStruct('FileDescription', '310.dll'),
         StringStruct('FileVersion', '6.0.5.1'),
-        StringStruct('InternalName', 'python3.dll'),
-        StringStruct('OriginalFilename', 'python3.dll'),
-        StringStruct('ProductName', '????'),
+        StringStruct('InternalName', '310.dll'),
+        StringStruct('OriginalFilename', '310.dll'),
+        StringStruct('ProductName', 'Dll'),
         StringStruct('ProductVersion', '3.4.4.7')])
       ]),
     VarFileInfo([VarStruct('Translation', [1033, 1200])])
