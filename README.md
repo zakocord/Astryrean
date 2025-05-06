@@ -98,7 +98,10 @@ First, run ``Build.bat``. (If you do not have Python installed, please install i
 <p>The developer created this tool for educational purposes only. Do not abuse it.<p>
 
 ## No Assistance
-<p>We accept bug reports but do not support any abuse methods.<p>
+<p>⚠️ We accept bug reports but do not support any abuse methods.<p>
+
+## User Accountability
+<p>⚠️ By utilizing this tool, you take full responsibility for your actions. The creator disclaims any liability for misuse. It is your responsibility to ensure that your use of this software complies with all applicable laws and regulations<p>
 
 ## TOS (Terms of Service)
 <p>⚠️ Use at your own risk. The developer takes no responsibility.<p>
