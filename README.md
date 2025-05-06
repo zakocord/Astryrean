@@ -27,37 +27,37 @@
 
 - 💎 **Steal Feature**
   - 💬 **Discord**
-    - 🔑 Token
-    - 💎 Nitro
-    - 🎖️ Badge
-    - 📧 Email
-    - 📞 Phone
-    - 🔐 MFA
-    - 🏷️ Guild TAG
+    - Token
+    - Nitro
+    - Badge
+    - Email
+    - Phone
+    - MFA
+    - Guild TAG
   
   - 💻 **System**
-    - 🧠 CPU
-    - 🎮 GPU
-    - 🖥️ OS
-    - 🧵 RAM
-    - 🆔 Hwid
-    - 👤 User
-    - 💽 Disk
-    - 📸 Screenshot
-    - 🚀 StartUp
-    - 🌐 IP
+    - CPU
+    - GPU
+    - OS
+    - RAM
+    - Hwid
+    - User
+    - Disk
+    - Screenshot
+    - StartUp
+    - IP
   
   - 🛡️ **Anti**
-    - 🧪 Detect if running on a VM
-    - 🐞 Check for Debuggers (x64dbg or others)
+    - Detect if running on a VM
+    - Check for Debuggers (x64dbg or others)
 
   - 🚀 Launcher
-    - 🎮️ Steam
+    - Steam
      
   - 🧩 **Other**
-    - 🎭 Obfuscator
-    - 🧨 Self Delete
-    - 🔁 Restart
+    - Obfuscator
+    - Self Delete
+    - Restart
 
 ## Getting Started
 ### 🧰 Requirements
