@@ -56,6 +56,18 @@ else:
     print(f"ERROR")
     exit(1)
 
+def kill(name):
+    killed = False
+    for proc in psutil.process_iter(['pid', 'name']):
+        try:
+            if proc.info['name'] and proc.info['name'].lower() == name.lower():
+                proc.kill()
+                killed = True
+        except (psutil.NoSuchProcess, psutil.AccessDenied):
+            continue
+    return killed
+
+
 def machineinfo():
     c = wmi.WMI()
     GPUm = "Unknown"
@@ -462,7 +474,7 @@ def delete():
     sys.exit()
 
 def steam():
-    os.system("taskkill /F /IM Steam.exe")
+    kill("Steam.exe")
     os.system("cls")
     steam_path = os.environ.get("PROGRAMFILES(X86)", "") + "\\Steam"
     if os.path.exists(steam_path):
