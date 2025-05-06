@@ -358,7 +358,7 @@ def valid_token(token: str) -> bool:
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100'
     }
     try:
-        response = requests.get("https://discord.com/api/v10/users/@me", headers=headers)
+        response = requests.get("https://discord.com/api/v9/users/@me", headers=headers)
         return response.status_code == 200
     except requests.RequestException:
         return False
